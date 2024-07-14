@@ -24,8 +24,8 @@ class _HeartRatePageState extends State<HeartRatePage> {
   bool isAlert = true;
   @override
   Widget build(BuildContext context) {
-    Provider.of<DataProvider>(context, listen: false)
-                        .clearData();
+    //Provider.of<DataProvider>(context, listen: false)
+                        //.clearData();
     Provider.of<DataProvider>(context, listen: false)
                         .fetchHeartData(start, end); 
     print(last7Days.toString());

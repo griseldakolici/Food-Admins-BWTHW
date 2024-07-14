@@ -28,8 +28,8 @@ class _ExerciseState extends State<ExercisePage> {
                   //ScaffoldMessenger.of(context)
                   //  ..removeCurrentSnackBar()
                   //  ..showSnackBar(SnackBar(content: Text(message)));
-    Provider.of<DataProvider>(context, listen: false)
-                        .clearData();
+    //Provider.of<DataProvider>(context, listen: false)
+                        //.clearData();
     Provider.of<DataProvider>(context, listen: false)
                         .fetchExerciseData(start, end);
   
